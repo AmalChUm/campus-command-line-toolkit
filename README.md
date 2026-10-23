@@ -12,9 +12,11 @@ campus-command-line-toolkit/
 ├── requirements.txt
 ├── tools/
 │   ├── __init__.py
-│   └── example_tool.py
+│   ├── example_tool.py
+│   └── input_helpers.py
 ├── tests/
-│   └── test_smoke.py
+│   ├── test_smoke.py
+│   └── test_input_helpers.py
 └── docs/
     └── contribution-evidence.md
 ```
@@ -45,6 +47,32 @@ Use a feature branch, make a focused change, test it, and open a pull request. R
 
 ## Current tools
 
-- Example Tool — starter example showing the required contract.
+- **Input Validation Example** by Andrew Haralambous:
+  Demonstrates reusable helpers for nonblank text and integer input.
+  Run `python main.py` and select **Input Validation Example**.
 
-New tools should add one row to this section and explain how the tool was tested.
+## Input-validation helpers
+
+`tools/input_helpers.py` provides:
+
+- `read_nonempty_text(prompt)`: Rejects empty or whitespace-only input.
+  Returns text with leading and trailing whitespace removed.
+- `read_integer(prompt)`: Rejects blank input, words, and decimal values.
+  Returns an integer; positive numbers, negative numbers, and zero are accepted.
+
+Both helpers display an error and repeat the prompt after invalid input.
+The example tool in `tools/example_tool.py` demonstrates both helpers.
+
+## Verification
+
+Run from the repository root:
+
+```text
+python -m unittest discover -s tests -p test_input_helpers.py -v
+```
+
+Observed result: All 8 tests passed (`OK`).
+
+Tests cover valid text, whitespace trimming, blank and whitespace-only
+input, positive and negative integers, zero, nonnumeric input, decimal
+input, and the complete launcher interaction.
