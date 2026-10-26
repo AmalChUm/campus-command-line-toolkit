@@ -46,5 +46,6 @@ Use a feature branch, make a focused change, test it, and open a pull request. R
 ## Current tools
 
 - Example Tool — starter example showing the required contract.
+- Grade Average Tool — Enter scores to get the average, highest, and lowest scores.
 
 New tools should add one row to this section and explain how the tool was tested.
