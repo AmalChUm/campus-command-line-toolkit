@@ -46,5 +46,6 @@ Use a feature branch, make a focused change, test it, and open a pull request. R
 ## Current tools
 
 - Example Tool — starter example showing the required contract.
+- Study Timer — Counts down a study session one minute at a time and asks again on invalid input (Ex: Enter 2 for a 2-minute session). I tested with python3 main.py using 0, -1, a, 1, and 2.
 
 New tools should add one row to this section and explain how the tool was tested.
