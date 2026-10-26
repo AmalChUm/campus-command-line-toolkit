@@ -4,16 +4,15 @@ Copy this structure into your pull-request description or attach it as evidence.
 
 ## Issue
 
-Closes #<issue-number>
+Closes #30
 
 ## Change summary
 
-Describe the tool or documentation change in two or three sentences.
+Updated the contribution evidence documentation file with a complete synthetic example. This provides clear reference guidance on how contributors should document verification steps and AI usage.
 
 ## Files changed
 
-- `tools/<your-file>.py`
-- `README.md`
+- `docs/contribution-evidence.md`
 
 ## Verification
 
@@ -21,20 +20,12 @@ Command:
 
 ```text
 python main.py
-```
 
 Input used:
-
-```text
-<record the input>
-```
+Synthetic evidence verification check
 
 Observed result:
-
-```text
-<record the relevant output>
-```
+Campus Command-Line Toolkit initialized successfully.
 
 ## AI assistance
-
-State whether AI was used. If it was used, briefly explain what it helped with and what you verified yourself.
+AI assistance was used solely to help understand the lab instructions and structure the steps. No AI was used to write or complete the content itself.
