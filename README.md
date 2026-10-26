@@ -13,6 +13,7 @@ campus-command-line-toolkit/
 ├── tools/
 │   ├── __init__.py
 │   └── example_tool.py
+│   └── word_counter.py
 ├── tests/
 │   └── test_smoke.py
 └── docs/
@@ -48,3 +49,14 @@ Use a feature branch, make a focused change, test it, and open a pull request. R
 - Example Tool — starter example showing the required contract.
 
 New tools should add one row to this section and explain how the tool was tested.
+- **Word Counter** — A simple tool that counts the words, characters, and lines in text entered by the user. It supports multiple lines and displays a message when no text is entered.
+
+### Word Counter Testing
+
+I tested the Word Counter using `py main.py` in VS Code.
+
+- **Single sentence:** 7 words, 33 characters, and 1 line.
+- **Multiple lines:** 10 words, 48 characters, and 3 lines.
+- **Blank input:** The program displayed "No text was entered. Please try again."
+
+All three tests worked as expected.
