@@ -46,5 +46,6 @@ Use a feature branch, make a focused change, test it, and open a pull request. R
 ## Current tools
 
 - Example Tool — starter example showing the required contract.
+- Email Verification Tool -- verifies if an input email address is valid.
 
 New tools should add one row to this section and explain how the tool was tested.
