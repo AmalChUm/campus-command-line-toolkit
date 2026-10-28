@@ -45,6 +45,8 @@ Use a feature branch, make a focused change, test it, and open a pull request. R
 
 ## Current tools
 
-- Example Tool — starter example showing the required contract.
+- Password Strength Checker — Checks length and character categories of a password securely for educational purposes.
 
 New tools should add one row to this section and explain how the tool was tested.
+
+- Example usage: Run `python main.py`, select option `2`, and enter a password when prompted.
