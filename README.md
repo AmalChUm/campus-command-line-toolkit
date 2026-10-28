@@ -46,5 +46,6 @@ Use a feature branch, make a focused change, test it, and open a pull request. R
 ## Current tools
 
 - Example Tool — starter example showing the required contract.
+- Case Converter — convert text to UPPERCASE, lowercase, or Title Case; handles blank input. Tested with `python main.py`.
 
 New tools should add one row to this section and explain how the tool was tested.
