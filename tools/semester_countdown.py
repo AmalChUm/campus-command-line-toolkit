@@ -10,6 +10,14 @@ def days_until(target_date: datetime, from_date: datetime) -> int:
     return delta.days
 
 
+def print_result(target_date: datetime, days: int):
+    formatted_date = target_date.strftime('%B %d, %Y')
+    if days < 0:
+        print(f"The semester ended {abs(days)} days ago ({formatted_date}).")
+    else:
+        print(f"{days} days until the end of the semester ({formatted_date}).")
+
+
 def parse_date_input(raw: str) -> datetime:
     return datetime.strptime(raw.strip(), "%m %d %Y")
 
