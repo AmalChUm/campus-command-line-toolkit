@@ -47,4 +47,6 @@ Use a feature branch, make a focused change, test it, and open a pull request. R
 
 - Example Tool — starter example showing the required contract.
 
+- Campus Unit Converter - converts miles/kilometers and pounds/kilograms. Example: choose `1`, enter `10`, and it prints `10 miles = 16.0934 kilometers`.
+
 New tools should add one row to this section and explain how the tool was tested.
