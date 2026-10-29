@@ -18,11 +18,19 @@ def time_until(target_date: datetime, from_date: datetime) -> dict:
 
 
 def print_result(target_date: datetime, result: dict):
-    print(f"Time until end of semester ({target_date.strftime('%B %d, %Y')}):")
-    print(f"  {result['days']} days")
-    print(f"  {result['hours']} hours")
-    print(f"  {result['minutes']} minutes")
-    print(f"  {result['seconds']} seconds")
+    formatted_date = target_date.strftime('%B %d, %Y')
+    if result['total_seconds'] < 0:
+        print(f"End of semester ({formatted_date}) already passed:")
+        print(f"  {abs(result['days'])} days ago")
+        print(f"  {abs(result['hours'])} hours ago")
+        print(f"  {abs(result['minutes'])} minutes ago")
+        print(f"  {abs(result['seconds'])} seconds ago")
+    else:
+        print(f"Time until end of semester ({formatted_date}):")
+        print(f"  {result['days']} days")
+        print(f"  {result['hours']} hours")
+        print(f"  {result['minutes']} minutes")
+        print(f"  {result['seconds']} seconds")
 
 
 def run():
