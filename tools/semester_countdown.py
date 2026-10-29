@@ -23,4 +23,12 @@ def parse_date_input(raw: str) -> datetime:
 
 
 def run():
-    print("Semester countdown placeholder!")
+    while True:
+        raw = input("Enter today's date (MM DD YYYY): ")
+        try:
+            from_date = parse_date_input(raw)
+            break
+        except ValueError:
+            print("Invalid date, try again.")
+    days = days_until(SEMESTER_END, from_date)
+    print_result(SEMESTER_END, days)
