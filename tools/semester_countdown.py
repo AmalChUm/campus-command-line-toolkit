@@ -17,10 +17,14 @@ def time_until(target_date: datetime, from_date: datetime) -> dict:
     }
 
 
-def run():
-    result = time_until(SEMESTER_END, datetime.now())
-    print(f"Time until end of semester ({SEMESTER_END.strftime('%B %d, %Y')}):")
+def print_result(target_date: datetime, result: dict):
+    print(f"Time until end of semester ({target_date.strftime('%B %d, %Y')}):")
     print(f"  {result['days']} days")
     print(f"  {result['hours']} hours")
     print(f"  {result['minutes']} minutes")
     print(f"  {result['seconds']} seconds")
+
+
+def run():
+    result = time_until(SEMESTER_END, datetime.now())
+    print_result(SEMESTER_END, result)
