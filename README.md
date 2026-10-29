@@ -48,3 +48,5 @@ Use a feature branch, make a focused change, test it, and open a pull request. R
 - Example Tool — starter example showing the required contract.
 
 New tools should add one row to this section and explain how the tool was tested.
+
+- Percentage calculator - A tool module made to calculate the percentage, percentage change, or part from whole. Testing each option using valid and invalid inputs to make sure the calculations were working and errors were handled. Example, select the Part from whole option enter 10 for part and 50 for whole and the result will be 20%.
