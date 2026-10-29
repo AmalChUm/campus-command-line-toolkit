@@ -46,5 +46,22 @@ Use a feature branch, make a focused change, test it, and open a pull request. R
 ## Current tools
 
 - Example Tool — starter example showing the required contract.
+- Quiz Tool- A short quiz of 5 multiple choices questions  covering Git branching and merging topics 
+======================================================================
+## Quiz Tool Example
+        You will answer 5 random questions.
+        Type Q at any time to quit.
 
-New tools should add one row to this section and explain how the tool was tested.
+        Question 1 of 5
+
+        Which command stages a file after resolving its conflict?
+        A. git add docs/conflict-practice.md
+        B. git switch
+        C. git branch
+        D. git merge
+        Your answer (A-D, or Q to quit): q
+ ========================================================================
+ New tools should add one row to this section and explain how the tool was tested.
+ ## Testing: Ran python main.py and verified correct and incorrect answer feedback, invalid input handling, case-insensitive answers, correct-answer display, score and percentage calculation, quitting with Q, and quiz launch through the toolkit menu.
+
+
