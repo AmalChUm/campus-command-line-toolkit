@@ -16,26 +16,38 @@ def discover_tools():
     return sorted(discovered, key=lambda module: module.APP_NAME.lower())
 
 
+def print_help():
+    print("\nChoose a numbered tool to run it.")
+    print("Enter H (or type `help`) for instructions, or 0 to exit.")
+    print("Tools are discovered from modules in tools/ that have AUTHOR, APP_NAME, and run()")
+
+
 def main():
     tools = discover_tools()
-    if not tools:
-        print("No tools are available yet.")
-        return
+    print("Expected input: H for help, a tool number to run it, or 0 to exit.")
+    while True:
+        print("Campus Command-Line Toolkit\n")
+        print("H. Help / Instructions")
+        for index, module in enumerate(tools, start=1):
+            print(f"{index}. {module.APP_NAME} — {module.AUTHOR}")
+        if not tools:
+            print("No tools are available yet.")
+        print("0. Exit")
 
-    print("Campus Command-Line Toolkit")
-    for index, module in enumerate(tools, start=1):
-        print(f"{index}. {module.APP_NAME} — {module.AUTHOR}")
-    print("0. Exit")
-
-    choice = input("Choose a tool: ").strip()
-    if choice == "0":
+        choice = input("Choose a tool: ").strip()
+        if choice.lower() in ("h", "help"):
+            print_help()
+            print()
+            continue
+        if choice == "0":
+            return
+        try:
+            selected = tools[int(choice) - 1]
+        except (ValueError, IndexError):
+            print("Invalid selection.")
+            return
+        selected.run()
         return
-    try:
-        selected = tools[int(choice) - 1]
-    except (ValueError, IndexError):
-        print("Invalid selection.")
-        return
-    selected.run()
 
 
 if __name__ == "__main__":

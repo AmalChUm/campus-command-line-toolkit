@@ -26,6 +26,8 @@ python main.py
 ```
 
 Select a tool from the menu. The launcher discovers Python modules in `tools/` that expose the required plugin contract.
+Choose `H. Help / Instructions` (or type `help`) from the menu for launcher instructions; the menu reappears afterward and this option is available even when no tools have been added.
+The menu starts with an expected-input hint: enter `H` for help, a tool number to run it, or `0` to exit.
 
 ## Tool contract
 
