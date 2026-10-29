@@ -11,7 +11,8 @@ campus-command-line-toolkit/
 ├── CONTRIBUTING.md
 ├── requirements.txt
 ├── tools/
-│   ├── __init__.py
+│   ├── init__.py
+│   ├── reading_time.py
 │   └── example_tool.py
 ├── tests/
 │   └── test_smoke.py
@@ -46,5 +47,6 @@ Use a feature branch, make a focused change, test it, and open a pull request. R
 ## Current tools
 
 - Example Tool — starter example showing the required contract.
+- Reading Time Estimator tool - Insert paragraph into the command line and receive an estimate on how long it would take to read.
 
 New tools should add one row to this section and explain how the tool was tested.
