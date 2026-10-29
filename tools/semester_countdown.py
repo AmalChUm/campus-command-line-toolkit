@@ -19,4 +19,8 @@ def time_until(target_date: datetime, from_date: datetime) -> dict:
 
 def run():
     result = time_until(SEMESTER_END, datetime.now())
-    print(result)
+    print(f"Time until end of semester ({SEMESTER_END.strftime('%B %d, %Y')}):")
+    print(f"  {result['days']} days")
+    print(f"  {result['hours']} hours")
+    print(f"  {result['minutes']} minutes")
+    print(f"  {result['seconds']} seconds")
