@@ -15,7 +15,7 @@ def test_help_option_keeps_tool_menu_visible(monkeypatch, capsys):
     main.main()
 
     output = capsys.readouterr().out
-    assert output.count("Expected input: H for help, a tool number to run it, or 0 to exit.") == 2
+    assert output.count("Expected input: H for help, a tool number to run it, or 0 to exit.") == 1
     assert "Example Tool" in output
     assert output.count("H. Help / Instructions") == 2
     assert output.index("H. Help / Instructions") < output.index("1. Example Tool")
@@ -34,4 +34,4 @@ def test_help_is_available_when_no_tools(monkeypatch, capsys):
     assert "Expected input: H for help, a tool number to run it, or 0 to exit." in output
     assert "No tools are available yet." in output
     assert output.count("H. Help / Instructions") == 2
-    assert "Enter H (or type help)" in output
+    assert "Enter H (or type `help`)" in output
