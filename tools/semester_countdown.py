@@ -5,5 +5,10 @@ APP_NAME = "Semester Countdown"
 SEMESTER_END = datetime(2026, 12, 16)
 
 
+def days_until(target_date: datetime, from_date: datetime) -> int:
+    delta = target_date - from_date
+    return delta.days
+
+
 def run():
     print("Semester countdown placeholder!")
