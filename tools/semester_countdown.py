@@ -10,5 +10,9 @@ def days_until(target_date: datetime, from_date: datetime) -> int:
     return delta.days
 
 
+def parse_date_input(raw: str) -> datetime:
+    return datetime.strptime(raw.strip(), "%m %d %Y")
+
+
 def run():
     print("Semester countdown placeholder!")
