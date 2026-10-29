@@ -46,5 +46,8 @@ Use a feature branch, make a focused change, test it, and open a pull request. R
 ## Current tools
 
 - Example Tool — starter example showing the required contract.
+- Weekly Study Schedule Formatter (`tools/study_schedule.py`) - Organizes course names and study blocks into Monday-Sunday order. Run `python main.py` and select the tool. Example: enter `Math`, `Monday`, and `3 PM - 4 PM`, then leave the next course name blank to display the schedule. Leave the first course name blank to exit without adding blocks.
+
+Verification: Ran `py main.py` on Windows and selected the Weekly Study Schedule Formatter. Math on Monday from 3 PM - 4 PM displayed correctly. A blank first course displayed "No study blocks entered." An invalid day (Funday) and an empty study block were rejected; corrected input displayed English on Tuesday from 5 PM - 6 PM.
 
 New tools should add one row to this section and explain how the tool was tested.
