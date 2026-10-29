@@ -12,7 +12,8 @@ campus-command-line-toolkit/
 ├── requirements.txt
 ├── tools/
 │   ├── __init__.py
-│   └── example_tool.py
+│   ├── example_tool.py
+│   └── semester_countdown.py
 ├── tests/
 │   └── test_smoke.py
 └── docs/
@@ -46,5 +47,6 @@ Use a feature branch, make a focused change, test it, and open a pull request. R
 ## Current tools
 
 - Example Tool — starter example showing the required contract.
+- Semester Countdown — displays days, hours, minutes, and seconds until the end of the semester.
 
 New tools should add one row to this section and explain how the tool was tested.
