@@ -6,6 +6,10 @@ SEMESTER_END = datetime(2026, 12, 16)
 
 
 def time_until(target_date: datetime, from_date: datetime) -> dict:
+    if not isinstance(target_date, datetime):
+        raise TypeError(f"target_date must be datetime, got {type(target_date).__name__}")
+    if not isinstance(from_date, datetime):
+        raise TypeError(f"from_date must be datetime, got {type(from_date).__name__}")
     delta = target_date - from_date
     total_seconds = int(delta.total_seconds())
     return {
