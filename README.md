@@ -43,8 +43,21 @@ def run():
 
 Use a feature branch, make a focused change, test it, and open a pull request. Read [CONTRIBUTING.md](CONTRIBUTING.md) before starting.
 
-## Current tools
+## Tools
 
-- Example Tool — starter example showing the required contract.
+| Tool | Module | Author | Description |
+| --- | --- | --- | --- |
+| Example Tool | `tools/example_tool.py` | SWE 325 Starter Team | Starter example showing the required contract. |
+| _Your tool name_ | `tools/<your_module>.py` | _Your name_ | _One-sentence description of what the tool does._ |
 
-New tools should add one row to this section and explain how the tool was tested.
+### Adding your tool to this table
+
+1. Add **one new row** for your tool directly below the last real entry, above the `_Your tool name_` template row.
+2. Fill in the four columns: **Tool** (your tool's `APP_NAME`), **Module** (path inside `tools/`), **Author** (your tool's `AUTHOR`), and **Description** (one sentence).
+3. Keep each row on a single line and use the same `|` format as the rows above.
+4. Do not edit or reorder other contributors' rows.
+5. In your pull request, record how you tested the tool (for example, `python main.py` and the input you used).
+
+### If two pull requests add rows at the same place
+
+Adding rows in the same spot of this table is expected to cause a merge conflict. When resolving it, keep **both** contributors' rows, place them one after another, delete every conflict marker (`<<<<<<<`, `=======`, `>>>>>>>`), and preview the README to confirm the table still renders.
