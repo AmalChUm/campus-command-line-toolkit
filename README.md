@@ -48,3 +48,7 @@ Use a feature branch, make a focused change, test it, and open a pull request. R
 - Example Tool — starter example showing the required contract.
 
 New tools should add one row to this section and explain how the tool was tested.
+
+## Contributor resources
+
+- [Tool Quality Checklist](docs/tool-quality-checklist.md) — Review functional behavior, structure, readability, and documentation before opening a pull request.
