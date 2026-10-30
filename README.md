@@ -45,6 +45,31 @@ Use a feature branch, make a focused change, test it, and open a pull request. R
 
 ## Current tools
 
-- Example Tool — starter example showing the required contract.
+The table lists tools currently included in this repository. Start the launcher
+from the repository root and select the tool by its displayed menu name.
 
-New tools should add one row to this section and explain how the tool was tested.
+| Tool | Author | Purpose | Example command and selection |
+| --- | --- | --- | --- |
+| [Example Tool](tools/example_tool.py) | SWE 325 Starter Team | Demonstrates the required `AUTHOR`, `APP_NAME`, and `run()` interface and prints a starter message. | Run `python main.py`, then select `Example Tool` from the menu. |
+
+### Example Tool output
+
+Selecting Example Tool prints:
+
+```text
+This is the starter tool. Choose an issue and add your own tool!
+```
+
+### Updating the catalog
+
+When adding a tool:
+
+- Add one row using the tool's `APP_NAME` and `AUTHOR` values.
+- Link the tool name to its Python module inside `tools/`.
+- Describe its purpose and how to launch it.
+- Refer to the displayed tool name rather than a fixed menu number, because
+  the launcher sorts tools by application name.
+- Include the verification command, input, and observed result in the pull
+  request.
+- List tools included in the repository, not proposed tools from unmerged
+  pull requests.
