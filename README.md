@@ -46,5 +46,27 @@ Use a feature branch, make a focused change, test it, and open a pull request. R
 ## Current tools
 
 - Example Tool — starter example showing the required contract.
+- Markdown Table Helper — generates a Markdown table from comma-separated headers and rows.
 
 New tools should add one row to this section and explain how the tool was tested.
+
+### Markdown Table Helper example
+
+Input:
+
+```text
+Name,Major
+Daniel,CIS
+Alex,Computer Science
+```
+
+Output:
+
+```text
+| Name | Major |
+| --- | --- |
+| Daniel | CIS |
+| Alex | Computer Science |
+```
+
+Test with `python main.py` and select Markdown Table Helper from the menu.
