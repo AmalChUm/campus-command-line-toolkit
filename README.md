@@ -48,3 +48,6 @@ Use a feature branch, make a focused change, test it, and open a pull request. R
 - Example Tool — starter example showing the required contract.
 
 New tools should add one row to this section and explain how the tool was tested.
+### CSV Grade Summary Tool
+- **Description:** Reads student scores from a CSV file and computes summary statistics including the total records processed, average score, highest score, and lowest score.
+- **Usage:** Run `python main.py`, select the tool, and provide the file path (e.g., `tests/fixtures/grades.csv`).
