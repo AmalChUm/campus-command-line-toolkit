@@ -48,3 +48,7 @@ Use a feature branch, make a focused change, test it, and open a pull request. R
 - Example Tool — starter example showing the required contract.
 
 New tools should add one row to this section and explain how the tool was tested.
+
+
+- GPA Calculator - Accepts course grades and credit hours to report a weighted GPA. Tested via launcher using three sample courses and verified handling of negative/non-numeric credit entries. 
+
