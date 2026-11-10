@@ -32,8 +32,8 @@ Select a tool from the menu. The launcher discovers Python modules in `tools/` t
 A contributed tool should normally be a single module inside `tools/` and define:
 
 ```python
-AUTHOR = "Your Name"
-APP_NAME = "A clear tool name"
+AUTHOR = "Eliad Spraggins"
+APP_NAME = "Budget Summary"
 
 
 def run():
@@ -48,3 +48,5 @@ Use a feature branch, make a focused change, test it, and open a pull request. R
 - Example Tool — starter example showing the required contract.
 
 New tools should add one row to this section and explain how the tool was tested.
+
+- Student Budget Summary — enter expenses one per line; a blank line ends entry and displays the total and average. Invalid or negative amounts are skipped with an error message. For example, entering `12.50`, `7.50`, then a blank line reports a total of `20.00` and an average of `10.00`.
